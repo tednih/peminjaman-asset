@@ -64,3 +64,16 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+## How to install peminjaman-asset
+
+- git clone https://github.com/tednih/peminjaman-asset.git to laragon/www/
+- composer install in laragon/www/peminjaman-asset
+- copy .env from RDS/VM peminjam asset
+- setting document root laragon to laragon/www/peminjaman-asset/public
+- start laragon
+- open your laragon ip in browser
+
+
