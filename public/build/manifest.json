@@ -1,0 +1,21 @@
+{
+  "public/images/bg-bp-baru.jpg": {
+    "file": "resources/css/bg-bp-baru-029f59af.jpg",
+    "src": "public/images/bg-bp-baru.jpg"
+  },
+  "resources/css/app.css": {
+    "file": "resources/css/app-98540b1e.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/admin.js": {
+    "file": "resources/css/admin-7352905c.js",
+    "isEntry": true,
+    "src": "resources/js/admin.js"
+  },
+  "resources/js/app.js": {
+    "file": "resources/css/app-c8bef766.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
