@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background-image {
+    background-image: url("/public/images/bg-bp-baru.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+
+#nama-container.show {
+    display: block;
+}
+
+#nama-container li:hover {
+    background-color: #edf2f7;
+    cursor: pointer;
+}
