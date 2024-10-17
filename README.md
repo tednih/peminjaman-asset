@@ -74,12 +74,14 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 -   start laragon
 -   open your laragon ip in browser
 
-## How to commit code change
+## How to commit code change to github
 
 -   open terminal laragon
 -   cd.. (laragon/www/peminjaman-asset)
+-   git config --global user.name "YourName"
+-   git config --global user.email "YourEmail@example.com"
 -   git add .
--   git commit "comment"
+-   git commit -m "comment"
 -   git push -u origin main
 
 ## How to change code in RDS/VM pinjam asset
