@@ -67,6 +67,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## How to install peminjaman-asset
 
+-   open git bash in laragon/www/
 -   git clone https://github.com/tednih/peminjaman-asset.git to laragon/www/
 -   composer install in laragon/www/peminjaman-asset
 -   copy .env from RDS/VM pinjam asset
@@ -75,6 +76,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 -   open your laragon ip in browser
 
 ## How to commit code change to github
+
+**(BEFORE EDIT CODE IN YOUR LOCAL, NEED TO open git bash and then "git pull" in laragon/www/peminjaman-asset)**
 
 -   open terminal laragon
 -   cd.. (laragon/www/peminjaman-asset)
