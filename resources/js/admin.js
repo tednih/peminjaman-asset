@@ -18,42 +18,32 @@ document.addEventListener("DOMContentLoaded", function () {
 //notif
 
 // burger button
-// const button = document.getElementById("burger-button");
-// const sidebar = document.getElementById("logo-sidebar");
-
-// document.addEventListener("click", (event) => {
-//     const target = event.target;
-
-//     if (target == button) {
-//         sidebar.classList.remove("hidden");
-//     } else if (!sidebar.contains(target) && target !== button) {
-//         sidebar.classList.add("hidden");
-//     }
-// });
 document.getElementById("burger-button").addEventListener("click", function () {
     const sidebar = document.getElementById("logo-sidebar");
 
-    if (sidebar.classList.contains("show")) {
-        // Jika sidebar sudah terbuka, tutup sidebar
-        sidebar.classList.remove("show");
+    // Toggle sidebar di layar kecil (sm)
+    if (sidebar.classList.contains("hidden")) {
+        sidebar.classList.remove("hidden");
+        sidebar.classList.add("translate-x-0");
     } else {
-        // Buka sidebar dengan menambahkan class 'show'
-        sidebar.classList.add("show");
+        sidebar.classList.add("hidden");
+        sidebar.classList.remove("translate-x-0");
     }
 });
 
-// Jika Anda ingin sidebar menutup otomatis saat klik di luar sidebar, tambahkan event listener:
+// Jika ingin menutup sidebar ketika klik di luar sidebar:
 document.addEventListener("click", function (event) {
     const sidebar = document.getElementById("logo-sidebar");
     const burgerButton = document.getElementById("burger-button");
 
+    // Tutup sidebar jika klik di luar sidebar dan burger button
     if (
         !sidebar.contains(event.target) &&
         event.target !== burgerButton &&
-        sidebar.classList.contains("show")
+        sidebar.classList.contains("translate-x-0")
     ) {
-        // Menutup sidebar jika klik di luar sidebar dan tombol burger
-        sidebar.classList.remove("show");
+        sidebar.classList.add("-translate-x-full");
+        sidebar.classList.remove("translate-x-0");
     }
 });
 
