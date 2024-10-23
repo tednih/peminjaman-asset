@@ -50,7 +50,7 @@
         </svg>
     </button>
 
-    <aside id="logo-sidebar" class="sidebar fixed top-0 left-0 z-20 w-64 h-screen md:block lg:block" aria-label="Sidebar">
+    <aside id="logo-sidebar" class="sm:sidebar fixed top-0 left-0 z-20 w-64 h-screen md:block lg:block" aria-label="Sidebar">
         <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
             <a href="/admin" class="flex items-center pl-2.5 mb-5">
                 <img src="{{ asset('images/logobp.png') }}" class="h-6 w-6 mr-3 sm:h-7" alt="BinaPertiwi Logo" />
