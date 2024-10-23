@@ -18,18 +18,45 @@ document.addEventListener("DOMContentLoaded", function () {
 //notif
 
 // burger button
-const button = document.getElementById("burger-button");
-const sidebar = document.getElementById("logo-sidebar");
+// const button = document.getElementById("burger-button");
+// const sidebar = document.getElementById("logo-sidebar");
 
-document.addEventListener("click", (event) => {
-    const target = event.target;
+// document.addEventListener("click", (event) => {
+//     const target = event.target;
 
-    if (target == button) {
-        sidebar.classList.remove("hidden");
-    } else if (!sidebar.contains(target) && target !== button) {
-        sidebar.classList.add("hidden");
+//     if (target == button) {
+//         sidebar.classList.remove("hidden");
+//     } else if (!sidebar.contains(target) && target !== button) {
+//         sidebar.classList.add("hidden");
+//     }
+// });
+document.getElementById("burger-button").addEventListener("click", function () {
+    const sidebar = document.getElementById("logo-sidebar");
+
+    if (sidebar.classList.contains("show")) {
+        // Jika sidebar sudah terbuka, tutup sidebar
+        sidebar.classList.remove("show");
+    } else {
+        // Buka sidebar dengan menambahkan class 'show'
+        sidebar.classList.add("show");
     }
 });
+
+// Jika Anda ingin sidebar menutup otomatis saat klik di luar sidebar, tambahkan event listener:
+document.addEventListener("click", function (event) {
+    const sidebar = document.getElementById("logo-sidebar");
+    const burgerButton = document.getElementById("burger-button");
+
+    if (
+        !sidebar.contains(event.target) &&
+        event.target !== burgerButton &&
+        sidebar.classList.contains("show")
+    ) {
+        // Menutup sidebar jika klik di luar sidebar dan tombol burger
+        sidebar.classList.remove("show");
+    }
+});
+
 // burger button
 
 //KARYAWAN
