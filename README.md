@@ -24,3 +24,4 @@
 
 -   open git bash in laragon/www/peminjaman-asset
 -   git pull
+-   npm run build
