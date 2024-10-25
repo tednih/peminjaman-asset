@@ -1,9 +1,9 @@
-@extends('admin.admin')
+@extends('admin.index')
 
 @section('notif')
 
 @if (session('deadline'))
-<div id="notif" class="p-2 sm:ml-64 hidden">
+<div id="notif" class="p-2 sm: hidden">
     <div class="p-4 py-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
         <div class="bg-blue-100 border-t-4 border-blue-500 rounded-b text-blue-900 px-4 py-3 shadow-md " role="alert">
             <div class="flex">
@@ -23,7 +23,7 @@
 @endif
 
 @if (session('berhasil_hps'))
-<div id="notif" class="p-2 sm:ml-64 hidden">
+<div id="notif" class="p-2 sm: hidden">
     <div class="p-4 py-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
         <div class="bg-red-100 border-t-4 border-red-500 rounded-b text-red-900 px-4 py-3 shadow-md " role="alert">
             <div class="flex">
@@ -42,7 +42,7 @@
 </div>
 @endif
 @if (session('berhasil_approve'))
-<div id="notif" class="p-2 sm:ml-64 hidden">
+<div id="notif" class="p-2 sm: hidden">
     <div class="p-4 py-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
         <div class="bg-blue-100 border-t-4 border-blue-500 rounded-b text-blue-900 px-4 py-3 shadow-md " role="alert">
             <div class="flex">
@@ -118,5 +118,5 @@
         </div>
     </div>
 </div>
-@include('admin.history')
+@include('admin.dashboard.history')
 @endsection

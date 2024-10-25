@@ -29,7 +29,7 @@ class AdminController extends Controller
     public function adminDashboard()
     {
         if (Auth::check()) {
-            return view('admin/dashboard');
+            return view('admin/dashboard/index');
         }
     }
 
@@ -38,7 +38,7 @@ class AdminController extends Controller
     {
         $peminjaman = Peminjaman::all();
 
-        return view('admin/dashboard', compact('peminjaman'));
+        return view('admin/dashboard/index', compact('peminjaman'));
     }
 
 
@@ -127,7 +127,7 @@ class AdminController extends Controller
 
         $peminjaman = $query->orderBy('created_at', 'desc')->get();
 
-        return view('admin/dashboard', compact('peminjaman'));
+        return view('admin/dashboard/index', compact('peminjaman'));
     }
 
 
@@ -145,7 +145,7 @@ class AdminController extends Controller
             });
         }
 
-        return view('admin/dashboard', compact('peminjaman'));
+        return view('admin/dashboard/index', compact('peminjaman'));
     }
     //admin.dashboard
 

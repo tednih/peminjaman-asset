@@ -1,8 +1,8 @@
-@extends('admin.admin')
+@extends('admin.index')
 
 @section('notif')
 @if (session('success'))
-<div id="notif" class="p-2 sm:ml-64 hidden">
+<div id="notif" class="p-2 sm: hidden">
     <div class="p-4 py-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
         <div class="bg-blue-100 border-t-4 border-blue-500 rounded-b text-blue-900 px-4 py-3 shadow-md " role="alert">
             <div class="flex">
