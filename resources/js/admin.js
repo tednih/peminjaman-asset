@@ -22,11 +22,11 @@ document.getElementById("burger-button").addEventListener("click", function () {
     const sidebar = document.getElementById("logo-sidebar");
 
     // Toggle sidebar di layar kecil (sm)
-    if (sidebar.classList.contains("hidden")) {
-        sidebar.classList.remove("hidden");
+    if (sidebar.classList.contains("-translate-x-full")) {
+        sidebar.classList.remove("-translate-x-full");
         sidebar.classList.add("translate-x-0");
     } else {
-        sidebar.classList.add("hidden");
+        sidebar.classList.add("-translate-x-full");
         sidebar.classList.remove("translate-x-0");
     }
 });
